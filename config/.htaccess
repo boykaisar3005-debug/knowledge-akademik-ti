@@ -1,0 +1,7 @@
+<FilesMatch "^(\.env|groq\.php|database\.php|helpers\.php)$">
+    Require all denied
+</FilesMatch>
+
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+</IfModule>
